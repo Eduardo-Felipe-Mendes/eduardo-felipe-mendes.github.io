@@ -46,8 +46,6 @@ body {
     margin-bottom: 30px;
 }
 
-
-
 .social-media a {
     font-size: 2rem;
     color: white;
@@ -86,6 +84,64 @@ body {
     box-shadow: 0 10px 25px black;
 }
 
+.carousel-paisagem img {
+    width: 900px;
+    height: 900px;
+    margin: 30px auto;
+    border: 2px solid #00ff5f;
+    border-radius: 15px;
+    display: block;
+}
+
+.carousel h2 {
+    text-align: center;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    color: #00ff5f;
+    text-shadow: 2px 2px 2px green;
+    border-bottom: 1px solid green;
+}
+
+.services {
+    background-color: #1c1c1c;
+}
+
+.services h2 {
+    text-align: center;
+    border-bottom: 1px solid #00ff5f;
+}
+
+.services-container {
+    padding: 4rem 2rem;
+    color: #fff;
+    background-color: #1c1c1c;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.service-box {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin: 0 auto;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+.service-box h3 {
+    color: #00ff5f; 
+    margin-bottom: 0.5rem;
+}
+
 @media (max-width: 900px) {
     .home {
         flex-direction: column-reverse;
@@ -103,51 +159,39 @@ body {
 
     .home-img {
         margin-bottom: 30px;
+        max-width: 300px;
     }
-}
 
-.carousel-paisagem img{
-    width: 900px;
-    height: 900px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.services-container {
-  padding: 4rem 2rem;
-  color: #fff;
-  background-color: #1c1c1c; /* mesmo estilo do seu fundo */
-  text-align: center;
-}
+    .home-content h1 {
+        font-size: 2.2rem;
+    }
 
-.services-container h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #fff;
-}
+    .home-content h3 {
+        font-size: 1.2rem;
+    }
 
-.service-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* ajusta automaticamente */
-  gap: 1.5rem;
-  justify-items: center;
-}
+    .carousel-paisagem img {
+        width: 100%;
+        height: auto;
+        max-width: 500px;
+    }
 
-.service-box {
-  background-color: #2a2a2a;
-  border-radius: 10px;
-  padding: 1.5rem;
-  width: 100%;
-  max-width: 300px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
+    .services-container {
+        grid-template-columns: 1fr 1fr;
+    }
 
-.service-box:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
-}
+    @media (max-width: 600px) {
+        .services-container {
+            grid-template-columns: 1fr;
+        }
 
-.service-box h3 {
-  color: #00ff5f; /* verde que combina com o botão Currículo */
-  margin-bottom: 0.5rem;
+        .service-box {
+            max-width: 90%;
+        }
+
+        .carousel-paisagem img {
+            max-width: 100%;
+            margin: 20px auto;
+        }
+    }
 }
