@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Eduardo Felipe</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- AULA 03 -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                Eduardo<span class="text-success">Felipe</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class='bx bx-menu fs-1 text-light'></i>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- AULA 02 -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Eduardo Felipe</h1>
+            <h3>Estou estudando programação</h3>
+
+            <p>
+                Olá! Sou Eduardo Felipe, tenho 21 anos e estou no meu primeiro ano de faculdade de Análise e
+                Desenvolvimento de Sistemas.
+
+            </p>
+
+            <div class="social-media">
+                <a href="https://github.com/Eduardo-Felipe-Mendes" target="_blank">
+                    <i class="bx bxl-github"></i>
+            
+                <a href="https://www.instagram.com/7edudardo/" target="_blank">
+                    <i class="bx bxl-instagram-alt"></i>
+                </a>
+            </div>
+
+            <a href="CV - Eduardo Felipe BR.pdf" class="btn" download="CV - Eduardo Felipe BR.pdf">Curriculo</a>
+        </div>
+
+        <div class="home-img">
+            <img src="imgs/foto-perfil.jpeg" alt="Foto do Perfil">
+        </div>
+    </section>
+
+    <!-- ATIVIDADE 01: SECTION GRID/FLEX -->
+    <section class="services" id="services">
+        <h2 class="heading">Habilidades</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Desenvolvimento Web(iniciante)</h3>
+                <p>java, SQL</p>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bxl-react'></i>
+                <h3>Aplicações Front-End</h3>
+                <p>HTML, CSS</p>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bx-server'></i>
+                <h3>Inglês intermediario</h3>
+                <p>Leitura e comunicação em nivel intermediario</p>
+            </div>
+
+            <div class="service-box">
+                <i class='bx bx-brain'></i>
+                <h3>Pacote Office</h3>
+                <p>World, Exel</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ATIVIDADE 02: BOOTSTRAP -->
+    <section>
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-paisagem" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/paisagem-arvore.jpeg" class="d-block w-10" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/paisagem-neblina.jpeg" class="d-block w-10" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/paisagem-praia.jpeg" class="d-block w-10" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/paisagem-trem.jpeg" class="d-block w-10" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
