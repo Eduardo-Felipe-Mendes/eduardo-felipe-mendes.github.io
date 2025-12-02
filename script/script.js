@@ -1,0 +1,37 @@
+const typed = new Typed(".multiple-text", {
+    strings:[
+        "estou estudando programação",
+        "gosto de ler livros",
+        "jogo como hobby",
+        "gosto de fotografar paisagens",
+        
+    ],
+    typeSpeed:60,
+    backSpeed:60,
+    backDelay:100,
+    loop: true,
+  
+});
+
+const themeToggle = document.getElementById('themeToggle');
+const body = document.body;
+const themeIcon = document.querySelector('.theme-icon');
+
+function themeToggle() {
+    body.classList.toggle('light-mode');
+    const isLightMode = body.classList.contains('light-mode');
+
+    if (isLightMode) {
+        themeIcon.className = 'bx bx-moon theme-icon';
+        localStorage.setItem('theme', 'light');
+    } else {
+        themeIcon.className = 'bx bx-sun theme-icon';
+        localStorage.setItem('theme', 'dark');
+    }
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadSavedTheme);
+} else {
+    loadSavedTheme();   
+}
